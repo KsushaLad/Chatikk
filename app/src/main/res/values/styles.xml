@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="settingsButtons">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="normalText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginStart">16dp</item>
+    </style>
+
+    <style name="smallText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#686666</item>
+        <item name="android:layout_marginStart">16dp</item>
+    </style>
+
+    <style name="separator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#80CAC9C9</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginHorizontal">10dp</item>
+    </style>
+</resources>
