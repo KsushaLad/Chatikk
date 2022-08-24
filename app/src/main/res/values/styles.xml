@@ -28,6 +28,14 @@
         <item name="android:layout_height">1dp</item>
         <item name="android:background">#80CAC9C9</item>
         <item name="android:layout_marginTop">5dp</item>
-        <item name="android:layout_marginHorizontal">10dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+    </style>
+
+    <style name="mainToolbar">
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">@color/blue</item>
     </style>
 </resources>
