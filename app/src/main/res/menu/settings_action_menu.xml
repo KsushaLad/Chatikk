@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:icon="@drawable/ic_btn_action_menu"
+        app:showAsAction="ifRoom"
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/settings_menu_change_name"
+                android:icon="@drawable/ic_edit"
+                android:title="Изменить имя"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/settings_menu_exit"
+                android:icon="@drawable/ic_exit_to_app"
+                android:title="Выход"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>
