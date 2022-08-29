@@ -1,8 +1,10 @@
 package com.ladoshko.chatikk
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.widget.Toolbar
+import com.ladoshko.chatikk.activities.RegisterActivity
 import com.ladoshko.chatikk.databinding.ActivityMainBinding
 import com.ladoshko.chatikk.ui.fragments.ChatsFragment
 import com.ladoshko.chatikk.ui.objects.AppDrawer
@@ -26,9 +28,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initFunctionality() {
-        setSupportActionBar(mToolbar)
-        appDrawer.create()
-        supportFragmentManager.beginTransaction().replace(R.id.data_container, ChatsFragment()).commit()
+        if (false){
+            setSupportActionBar(mToolbar)
+            appDrawer.create()
+            supportFragmentManager.beginTransaction().replace(R.id.data_container, ChatsFragment()).commit()
+        } else {
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 

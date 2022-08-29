@@ -44,4 +44,15 @@
         <item name="actionMenuTextColor">@color/black</item>
     </style>
 
+    <style name="edit_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:inputType">phone</item>
+    </style>
+
 </resources>
