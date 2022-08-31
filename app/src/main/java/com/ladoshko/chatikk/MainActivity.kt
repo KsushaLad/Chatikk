@@ -8,6 +8,7 @@ import com.ladoshko.chatikk.activities.RegisterActivity
 import com.ladoshko.chatikk.databinding.ActivityMainBinding
 import com.ladoshko.chatikk.ui.fragments.ChatsFragment
 import com.ladoshko.chatikk.ui.objects.AppDrawer
+import com.ladoshko.chatikk.utilits.replaceActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,19 +29,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initFunctionality() {
-        if (false){
+        if (true){
             setSupportActionBar(mToolbar)
             appDrawer.create()
-            supportFragmentManager.beginTransaction().replace(R.id.data_container, ChatsFragment()).commit()
+            supportFragmentManager.beginTransaction().addToBackStack(null).replace(R.id.data_container, ChatsFragment()).commit()
         } else {
-            val intent = Intent(this, RegisterActivity::class.java)
-            startActivity(intent)
+            replaceActivity(RegisterActivity())
         }
-
-
     }
-
-
 
     private fun initFields() {
         mToolbar = mainBinding.mainToolbar
