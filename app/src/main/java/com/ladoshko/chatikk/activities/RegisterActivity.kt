@@ -6,6 +6,7 @@ import androidx.appcompat.widget.Toolbar
 import com.ladoshko.chatikk.R
 import com.ladoshko.chatikk.databinding.ActivityRegisterBinding
 import com.ladoshko.chatikk.ui.fragments.EnterPhoneNumberFragment
+import com.ladoshko.chatikk.utilits.replaceFragmentRegister
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -23,8 +24,8 @@ class RegisterActivity : AppCompatActivity() {
         mToolbar = mBinding.registerToolbar
         setSupportActionBar(mToolbar)
         title = "Ваш телефон"
-        supportFragmentManager.beginTransaction().add(R.id.register_data_container, EnterPhoneNumberFragment()).commit()
-
+       // supportFragmentManager.beginTransaction().add(R.id.register_data_container, EnterPhoneNumberFragment()).commit()
+        replaceFragmentRegister(EnterPhoneNumberFragment(), false)
     }
 
 }

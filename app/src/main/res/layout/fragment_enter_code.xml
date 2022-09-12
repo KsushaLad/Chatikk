@@ -19,7 +19,7 @@
 
     <EditText
         android:id="@+id/register_input_code"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:autofillHints=""
@@ -27,7 +27,7 @@
         android:hint="— — — — — —"
         android:inputType="phone"
         android:maxLength="6"
-        android:padding="5dp"
+        android:padding="12dp"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="16sp"

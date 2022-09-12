@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "970831954744",
+    "project_id": "chatikk-862b4",
+    "storage_bucket": "chatikk-862b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:970831954744:android:faea576de9134ed46537cd",
+        "android_client_info": {
+          "package_name": "com.ladoshko.chatikk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "970831954744-k2pugqccvndqqt9qkchit4trrj03lt1b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeVFMI8d1JVolWSA9oqG4IdD112s6UD3I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "970831954744-k2pugqccvndqqt9qkchit4trrj03lt1b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
