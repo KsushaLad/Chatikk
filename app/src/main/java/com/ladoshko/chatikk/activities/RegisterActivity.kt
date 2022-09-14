@@ -6,6 +6,7 @@ import androidx.appcompat.widget.Toolbar
 import com.ladoshko.chatikk.R
 import com.ladoshko.chatikk.databinding.ActivityRegisterBinding
 import com.ladoshko.chatikk.ui.fragments.EnterPhoneNumberFragment
+import com.ladoshko.chatikk.utilits.initFirebase
 import com.ladoshko.chatikk.utilits.replaceFragmentRegister
 
 class RegisterActivity : AppCompatActivity() {
@@ -17,6 +18,7 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         mBinding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
+        initFirebase()
     }
 
     override fun onStart() {

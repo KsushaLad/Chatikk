@@ -9,6 +9,7 @@ import com.ladoshko.chatikk.databinding.ActivityMainBinding
 import com.ladoshko.chatikk.ui.fragments.ChatsFragment
 import com.ladoshko.chatikk.ui.objects.AppDrawer
 import com.ladoshko.chatikk.utilits.AUTH_FIREBASE
+import com.ladoshko.chatikk.utilits.initFirebase
 import com.ladoshko.chatikk.utilits.replaceActivity
 import com.ladoshko.chatikk.utilits.replaceFragmentMain
 
@@ -44,7 +45,7 @@ class MainActivity : AppCompatActivity() {
     private fun initFields() {
         mToolbar = mainBinding.mainToolbar
         appDrawer = AppDrawer(this, mToolbar)
-        AUTH_FIREBASE = FirebaseAuth.getInstance()
+        initFirebase()
     }
 
 }

@@ -32,12 +32,12 @@ fun AppCompatActivity.replaceFragmentMain(fragment: Fragment, addStack: Boolean 
 fun AppCompatActivity.replaceFragmentRegister(fragment: Fragment, addStack: Boolean = true) {
     if (addStack){
         supportFragmentManager.beginTransaction()
-            .replace(R.id.data_container, fragment)
+            .replace(R.id.register_data_container, fragment)
             .addToBackStack(null)
             .commit()
     } else{
         supportFragmentManager.beginTransaction()
-            .replace(R.id.data_container, fragment)
+            .replace(R.id.register_data_container, fragment)
             .commit()
     }
 }
