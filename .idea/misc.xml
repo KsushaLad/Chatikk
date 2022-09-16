@@ -12,11 +12,14 @@
         <entry key="..\:/Chatikk/app/src/main/res/drawable/ic_sm.xml" value="0.156" />
         <entry key="..\:/Chatikk/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Chatikk/app/src/main/res/layout/activity_register.xml" value="0.25416666666666665" />
+        <entry key="..\:/Chatikk/app/src/main/res/layout/fragment_change_name.xml" value="0.25416666666666665" />
+        <entry key="..\:/Chatikk/app/src/main/res/layout/fragment_change_username.xml" value="0.25416666666666665" />
         <entry key="..\:/Chatikk/app/src/main/res/layout/fragment_chats.xml" value="0.25416666666666665" />
         <entry key="..\:/Chatikk/app/src/main/res/layout/fragment_enter_code.xml" value="0.25416666666666665" />
         <entry key="..\:/Chatikk/app/src/main/res/layout/fragment_enter_phone_number.xml" value="0.25416666666666665" />
         <entry key="..\:/Chatikk/app/src/main/res/layout/fragment_settings.xml" value="0.264" />
         <entry key="..\:/Chatikk/app/src/main/res/menu/settings_action_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Chatikk/app/src/main/res/menu/settings_menu_confirm.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

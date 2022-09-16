@@ -4,19 +4,20 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.widget.Toolbar
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.ValueEventListener
 import com.ladoshko.chatikk.activities.RegisterActivity
 import com.ladoshko.chatikk.databinding.ActivityMainBinding
+import com.ladoshko.chatikk.models.User
 import com.ladoshko.chatikk.ui.fragments.ChatsFragment
 import com.ladoshko.chatikk.ui.objects.AppDrawer
-import com.ladoshko.chatikk.utilits.AUTH_FIREBASE
-import com.ladoshko.chatikk.utilits.initFirebase
-import com.ladoshko.chatikk.utilits.replaceActivity
-import com.ladoshko.chatikk.utilits.replaceFragmentMain
+import com.ladoshko.chatikk.utilits.*
 
 class MainActivity : AppCompatActivity() {
 
    private lateinit var mainBinding: ActivityMainBinding
-   private lateinit var appDrawer: AppDrawer
+   lateinit var appDrawer: AppDrawer
    private lateinit var mToolbar: Toolbar
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -46,6 +47,13 @@ class MainActivity : AppCompatActivity() {
         mToolbar = mainBinding.mainToolbar
         appDrawer = AppDrawer(this, mToolbar)
         initFirebase()
+        initUser()
+    }
+
+    private fun initUser() {
+        REF_DATABASE_ROOT.child(NODE_USERS).child(UID).addListenerForSingleValueEvent(AppValueEventListener{
+            USER = it.getValue(User::class.java) ?: User()
+        })
     }
 
 }
