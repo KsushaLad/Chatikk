@@ -31,6 +31,12 @@ class SettingsFragment : BaseFragment(R.layout.fragment_settings) {
                 ?.addToBackStack(null)
                 ?.commit()
         }
+        settings_btn_change_bio.setOnClickListener {
+            activity?.supportFragmentManager?.beginTransaction()
+                ?.replace(R.id.data_container, ChangeBioFragment())
+                ?.addToBackStack(null)
+                ?.commit()
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
